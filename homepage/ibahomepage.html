@@ -1,0 +1,322 @@
+</!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset='utf-8'>
+
+	<style>
+		.appname{
+				font-family: Arial Unicode MS;			
+				font-size: 49px;
+				color:black;
+				display: inline;
+			}
+
+			p{
+				font-style: italic;
+			}
+
+	.hex:hover{
+		cursor:pointer;
+
+	}
+	
+	#targetLine{
+
+		stroke:grey;
+		stroke-width:1
+	}
+	
+
+	.hextop {
+				width: 0;
+				border-bottom: 30px solid #F2DF4A;
+				border-left: 72px solid transparent;
+				border-right: 72px solid transparent;
+			}
+
+	.hexmiddle {					
+				width: 144px;
+				height: 90px;
+				background-color: #F2DF4A;				
+				z-index:3;
+			}
+
+	.hexbottom {
+				width: 0;
+				border-top: 30px solid #F2DF4A;
+				border-left: 72px solid transparent;
+				border-right: 72px solid transparent;
+			}
+
+
+	.hidden{
+		transition:2s; 
+		color:white;
+	}
+
+	.unhide {
+		transition:2s;
+		color:grey;
+	}
+	//keyframes
+	.businessText{
+
+		color:red;
+	}
+
+	</style>
+</head>
+<body>
+	
+		<div id='headerLogo' style='height:90px;background-color:#F2DF4A;border:3px solid #F2DF4A;border-radius:5px;	'><p class='appname' style='display:inline;position:relative;color:black;font-size:70px;'>iba</p>
+		<p class='appname' style='position:relative;left:250px;'>Integral Business Analytics</p>		
+		</div>
+		<!--<button style='float:right'>User Guide</button>-->
+		<div id='scrollText' >
+			<p class='hidden' style='position: relative;left:70px;top:10px;'>A next generation Business Intelligence, Reporting & Advanced Analytics Solution offering for Life, Group and General Insurance lines of business.</p>
+			<p class='hidden' style='position: relative;left:70px;top:10px;'>Solution is embedded with the core policy admin system helping customers with instant actionable insights and self service.</p>					
+		</div>
+
+
+	<div class='businessTextContainer'>	
+		<div class='businessText'>
+			<p  class='businessText' style='position:relative;left:10px;bottom:-350px;font-size:25px;'>Who are the top performing agents?</p>			
+			<p  class='hidden' style='position:fixed;left:900px;bottom:300px;font-size:25px;'>Are we having Claims Ratio within desired limits?</p>
+			<p  class='hidden' style='position:fixed;left:10px;bottom:100px;font-size:25px;'>What is our total outstanding receivables?</p>
+			<p  class='hidden' style='position:fixed;left:800px;bottom:100px;font-size:25px;'>Are we optimal in our risk distribution?</p>
+			<p  class='hidden' style='position:fixed;bottom:10px;font-size:25px;'>What is the average time to settle a claim?</p>
+			<p  class='hidden' style='position:fixed;left:10px;top:300px;font-size:25px;'>What is the YoY Sales growth?</p>
+		</div>
+	</div>
+	
+	<div id='hexagonContainer' style='height:300px;top:80px;left:50px;position:fixed;'>	
+		<div class='hex' style='width:104px;position:relative;left:400px;top:100px;'>
+			<div class='hextop'></div>
+			<div class='hexmiddle'>
+				<p style='z-index:5;display:inline;position:relative;top:35px;left:30px;'>Product Mgmt</p>
+				<div id='kpi' style='display: none;'>
+					<ul style='width:300px;position: relative;top:-14px;left:-350px;'>
+						<li>Top Products by weighted Premium</li>
+						<li>Top 10 most profitable Products</li>
+						<li>Product Group mix percentage</li>
+						<li>Reinsurance premium and Claims for a period</li>
+						<li>Earned Premiums</li>
+					</ul>
+				</div>
+			</div>				
+			<div class='hexbottom'></div>
+		</div>
+		<div class='hex' style='width:104px;position:relative;left:473px;top:72px;'>
+			<div class='hextop'></div>
+			<div class='hexmiddle'>
+				<p style='z-index:3;display:inline;position:relative;top:35px;left:40px;'>Marketing</p>
+				<div id='kpi' style='display: none;'>
+					
+					<ul style='width:300px;position: relative;top:-14px;left:300px;'>
+						<li>Production by Source of business</li>
+						<li>Channel productivity</li>
+						<li>Covers notes lapsed by Branch</li>
+					</ul>
+				</div>
+			</div>				
+			<div class='hexbottom'></div>
+		</div>
+		<div class='hex' style='z-index:2;width:104px;position:relative;left:545px;top:-200px;'>
+			<div class='hextop'></div>
+			<div class='hexmiddle'>
+				<p style='display:inline;position:relative;top:35px;left:20px;'>Sales/Distribution</p>
+				<div id='kpi' style='display: none;'>
+						
+						<ul style='width:300px;position: relative;top:-14px;left:140px;'>
+							<li>Performance trend across channels</li>
+							<li>Production by Major Class</li>
+							<li>gross written premium</li>
+						</ul>
+				</div>
+			</div>				
+			<div class='hexbottom'></div>
+		</div>
+		<div class='hex' style='z-index:2;width:104px;position:relative;left:328px;top:-227px;'>
+			<div class='hextop'></div>
+			<div class='hexmiddle'>
+				<p style='display:inline;position:relative;top:40px;left:10px;'>Underwriting</p>
+				<div id='kpi' style='display:none;z-index:5;'>
+					
+					<ul style='width:300px;position: relative;top:-14px;left:-270px;'>
+						<li>Loss Ratio</li>
+						<li>Number of Policies</li>
+						<li>regular Payment amount by policy</li>
+					</ul>
+				</div>
+			</div>				
+			<div class='hexbottom'></div>
+		</div>
+		<div class='hex' style='z-index:1;width:104px;position:relative;left:400px;top:-255px;'>
+			<div class='hextop'></div>
+			<div class='hexmiddle'>
+				<p style='display:inline;position:relative;top:40px;left:20px;'>Policy Admin</p>
+				<div id='kpi' style='display:none;'>
+					<ul style='width:300px;position: relative;top:-14px;left:-280px;'>
+						<li>Loss Ratio</li>
+						<li>Number of Policies</li>
+						<li>regular Payment amount by policy</li>
+					</ul>
+				</div>
+			</div>				
+			<div class='hexbottom'></div>
+		</div>
+		<div class='hex' style='width:104px;position:relative;left:620px;top:-527px;'>
+			<div class='hextop'></div>
+			<div class='hexmiddle'>
+				<p style='display:inline;position:relative;top:40px;left:10px;'>Claims Management</p>
+				<div id='kpi' style='display: none;'>
+
+					<ul style='width:300px;position: relative;top:-14px;left:150px;'>
+						<li>Claims Denial Rate</li>
+						<li>Weighted Premium across Claim types</li>
+						<li>Claims Count</li>
+						<li>Application Submission ratio</li>
+						<li>Ageing of Outstanding Claims as of period</li>
+						<li>% of YTD claims paid by Type</li>
+						<li>Gross and Net Loss incurred over time period</li>
+						<li>O/S Claim recovery amount per risk type</li>
+						<li>Claim amount paid and payable based on diagnosis code</li>
+					</ul>
+				</div>
+			</div>				
+			<div class='hexbottom'></div>	
+		</div>
+		<div class='hex' style='width:104px;position:relative;left:545px;top:-555px;'>
+			<div class='hextop'></div>
+			<div class='hexmiddle'>
+				<p style='display:inline;position:relative;top:30px;left:30px;'>Financial Management</p>
+				<div id='kpi' style='display:none;'>
+					<ul style='width:300px;position: relative;top:-14px;left:140px;'>
+						<li>Gross receievables</li>
+						<li>O/S receievables</li>
+						<li>Claims ratio</li>
+						<li>AR/GWP ratio</li>
+						<li>Ageing distribution Outstanding receivables</li>
+						<li>Investment by Fund</li>
+						<li>Payments extracted from Direct Credits to the bank</li>
+						<li>Number of Payments processed during a period of time</li>
+						<li>Payments done through Cheque</li>
+					</ul>
+				</div>
+			</div>				
+			<div class='hexbottom'></div>
+		</div>		
+	</div>
+	<!--<div class='parent' style='padding:100px;'>
+		<div class='menu' >
+			<img class='imgMenu' src='buttonDown.png'>
+		</div>
+		<div class='menu'>
+			<img  class='imgMenu' src='buttonDown.png'>
+		</div>
+		<div class='menu'>
+			<img  class='imgMenu' src='buttonDown.png'>
+		</div>
+	</div>-->
+
+<script type="text/javascript">
+
+	const sleep = (milliseconds) => {
+  		return new Promise(resolve => setTimeout(resolve, milliseconds))
+	};
+		
+	window.onload=async function displayBusinessText(){
+		var x=document.querySelector('.businessTextContainer');
+		var p=x.querySelectorAll('p');
+		
+		while(true){			
+			for (var i = 0; i < p.length; i++) {
+			var currentP=p[i];
+			currentP.setAttribute('class','unhide');
+			await sleep(5000);
+			currentP.setAttribute('class','hidden');
+			};
+		};			
+	};
+
+	document.addEventListener('load',async function(){
+		var x=document.querySelector('#scrollText');
+		var p=x.querySelectorAll('p');
+		
+		while(true){			
+			for (var i = 0; i < p.length; i++) {
+			var currentP=p[i];
+			currentP.setAttribute('class','unhide');
+			await sleep(5000);
+			currentP.setAttribute('class','hidden');
+			};
+		};	
+
+	});
+
+	function hexCentre(selectedHex){
+		let result=[];
+		let centerX = selectedHex.offsetLeft; 
+		let centerY = selectedHex.offsetTop;
+		result.push(centerX);
+		result.push(centerY);
+	return result;
+	};
+	let hexList=document.getElementsByClassName('hex');
+
+	for(i=0;i<hexList.length;i++){
+		hexList[i].addEventListener('mouseleave',function(event){
+				var kpiNode=this.querySelector('#kpi');
+				console.log(kpiNode);
+				kpiNode.setAttribute('style','display:none;')
+			
+				//code to remove dynamically added line on mouseout
+				/*var removeLine=this.querySelector('#targetLine');
+				var svgNode=this.querySelector("svg");
+				svgNode.removeChild(removeLine);*/
+
+		});
+
+		hexList[i].addEventListener('mouseover',function(event){			
+
+					var kpiNode=this.querySelector('#kpi');
+					kpiNode.setAttribute('style','display:inline;')
+					
+					//code to add line to svg dynamically
+					/*var svgNode=this.querySelector('svg');
+					if (svgNode){
+
+						let coordinates=hexCentre(this);
+						var newLine=document.createElementNS("http://www.w3.org/2000/svg","line");
+						newLine.setAttribute('id','targetLine');
+						newLine.setAttribute('x1',30);
+						newLine.setAttribute('y1',30);
+						newLine.setAttribute('x2','150');
+						newLine.setAttribute('y2','10');
+						newLine.setAttribute("style","stroke:red;stroke-width:1;");															
+						svgNode.appendChild(newLine);
+					};*/
+					
+		});
+		
+	};
+	/*for(i=0;i<imgList.length;i++){		
+		imgList[i].addEventListener('click',function(){
+			if (this.clickedStatus=='Y'){
+				this.clickedStatus='N'
+				this.setAttribute('style','transform: rotate(360deg);')	
+				
+			}else {
+					this.clickedStatus='Y';		
+					this.setAttribute('style','transform: rotate(180deg);')
+				}
+							
+			console.log(this.clickedStatus);
+
+		});
+	}*/
+
+</script>
+</body>
+</html>
