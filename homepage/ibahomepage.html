@@ -16,9 +16,15 @@
 				font-style: italic;
 			}
 
+
 	.hex:hover{
 		cursor:pointer;
 
+	}
+
+	.kpiText{
+		font-family: Arial Unicode MS;
+		font-style:italic;
 	}
 	
 	#targetLine{
@@ -68,16 +74,16 @@
 	</style>
 </head>
 <body>
-	
-		<div id='headerLogo' style='height:90px;background-color:#F2DF4A;border:3px solid #F2DF4A;border-radius:5px;	'><p class='appname' style='display:inline;position:relative;color:black;font-size:70px;'>iba</p>
+	<p> hi aakila</p>
+	<div id='headerLogo' style='height:90px;background-color:#F2DF4A;border:3px solid #F2DF4A;border-radius:5px;'>
+		<p class='appname' style='display:inline;position:relative;color:black;font-size:70px;'>iba</p>
 		<p class='appname' style='position:relative;left:250px;'>Integral Business Analytics</p>		
-		</div>
-		<!--<button style='float:right'>User Guide</button>-->
-		<div id='scrollText' >
-			<p class='hidden' style='position: relative;left:70px;top:10px;'>A next generation Business Intelligence, Reporting & Advanced Analytics Solution offering for Life, Group and General Insurance lines of business.</p>
-			<p class='hidden' style='position: relative;left:70px;top:10px;'>Solution is embedded with the core policy admin system helping customers with instant actionable insights and self service.</p>					
-		</div>
-
+	</div>
+	<!--<button style='float:right'>User Guide</button>-->
+	<div id='scrollText' >
+		<p class='hidden' style='position: relative;left:70px;top:10px;'>A next generation Business Intelligence, Reporting & Advanced Analytics Solution offering for Life, Group and General Insurance lines of business.</p>
+		<p class='hidden' style='position: relative;left:70px;top:10px;'>Solution is embedded with the core policy admin system helping customers with instant actionable insights and self service.</p>					
+	</div>
 
 	<div class='businessTextContainer'>	
 		<div class='businessText'>
@@ -95,8 +101,8 @@
 			<div class='hextop'></div>
 			<div class='hexmiddle'>
 				<p style='z-index:5;display:inline;position:relative;top:35px;left:30px;'>Product Mgmt</p>
-				<div id='kpi' style='display: none;'>
-					<ul style='width:300px;position: relative;top:-14px;left:-350px;'>
+				<div class='kpi' style='display: none;'>
+					<ul class='kpiText' style='width:300px;position: relative;top:-14px;left:-350px;'>
 						<li>Top Products by weighted Premium</li>
 						<li>Top 10 most profitable Products</li>
 						<li>Product Group mix percentage</li>
@@ -111,9 +117,9 @@
 			<div class='hextop'></div>
 			<div class='hexmiddle'>
 				<p style='z-index:3;display:inline;position:relative;top:35px;left:40px;'>Marketing</p>
-				<div id='kpi' style='display: none;'>
+				<div class='kpi'  style='display: none;'>
 					
-					<ul style='width:300px;position: relative;top:-14px;left:300px;'>
+					<ul class='kpiText' style='width:300px;position: relative;top:-14px;left:300px;'>
 						<li>Production by Source of business</li>
 						<li>Channel productivity</li>
 						<li>Covers notes lapsed by Branch</li>
@@ -126,9 +132,8 @@
 			<div class='hextop'></div>
 			<div class='hexmiddle'>
 				<p style='display:inline;position:relative;top:35px;left:20px;'>Sales/Distribution</p>
-				<div id='kpi' style='display: none;'>
-						
-						<ul style='width:300px;position: relative;top:-14px;left:140px;'>
+				<div class='kpi' style='display: none;'>						
+						<ul class='kpiText' style='width:300px;position: relative;top:-14px;left:140px;'>
 							<li>Performance trend across channels</li>
 							<li>Production by Major Class</li>
 							<li>gross written premium</li>
@@ -141,9 +146,9 @@
 			<div class='hextop'></div>
 			<div class='hexmiddle'>
 				<p style='display:inline;position:relative;top:40px;left:10px;'>Underwriting</p>
-				<div id='kpi' style='display:none;z-index:5;'>
+				<div class='kpi' style='display:none;z-index:5;'>
 					
-					<ul style='width:300px;position: relative;top:-14px;left:-270px;'>
+					<ul class='kpiText' style='width:300px;position: relative;top:-14px;left:-270px;'>
 						<li>Loss Ratio</li>
 						<li>Number of Policies</li>
 						<li>regular Payment amount by policy</li>
@@ -156,8 +161,8 @@
 			<div class='hextop'></div>
 			<div class='hexmiddle'>
 				<p style='display:inline;position:relative;top:40px;left:20px;'>Policy Admin</p>
-				<div id='kpi' style='display:none;'>
-					<ul style='width:300px;position: relative;top:-14px;left:-280px;'>
+				<div class='kpi' style='display:none;'>
+					<ul class='kpiText' style='width:300px;position: relative;top:-14px;left:-280px;'>
 						<li>Loss Ratio</li>
 						<li>Number of Policies</li>
 						<li>regular Payment amount by policy</li>
@@ -170,9 +175,8 @@
 			<div class='hextop'></div>
 			<div class='hexmiddle'>
 				<p style='display:inline;position:relative;top:40px;left:10px;'>Claims Management</p>
-				<div id='kpi' style='display: none;'>
-
-					<ul style='width:300px;position: relative;top:-14px;left:150px;'>
+				<div class='kpi' style='display: none;'>
+					<ul class='kpiText' style='width:300px;position: relative;top:-14px;left:150px;'>
 						<li>Claims Denial Rate</li>
 						<li>Weighted Premium across Claim types</li>
 						<li>Claims Count</li>
@@ -191,8 +195,8 @@
 			<div class='hextop'></div>
 			<div class='hexmiddle'>
 				<p style='display:inline;position:relative;top:30px;left:30px;'>Financial Management</p>
-				<div id='kpi' style='display:none;'>
-					<ul style='width:300px;position: relative;top:-14px;left:140px;'>
+				<div class='kpi'  style='display:none;'>
+					<ul class='kpiText' style='width:300px;position: relative;top:-14px;left:140px;'>
 						<li>Gross receievables</li>
 						<li>O/S receievables</li>
 						<li>Claims ratio</li>
@@ -267,7 +271,7 @@
 
 	for(i=0;i<hexList.length;i++){
 		hexList[i].addEventListener('mouseleave',function(event){
-				var kpiNode=this.querySelector('#kpi');
+				var kpiNode=this.querySelector('.kpi');
 				console.log(kpiNode);
 				kpiNode.setAttribute('style','display:none;')
 			
@@ -280,7 +284,7 @@
 
 		hexList[i].addEventListener('mouseover',function(event){			
 
-					var kpiNode=this.querySelector('#kpi');
+					var kpiNode=this.querySelector('.kpi');
 					kpiNode.setAttribute('style','display:inline;')
 					
 					//code to add line to svg dynamically
