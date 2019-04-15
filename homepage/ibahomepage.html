@@ -5,6 +5,10 @@
 	<meta charset='utf-8'>
 
 	<style>
+		body{
+
+			background-color:white;
+		}
 		.appname{			
 
     			font-family: 'Roboto', sans-serif;
@@ -12,79 +16,86 @@
 				font-size: 49px;
 				color:black;
 				display: inline;
-			}			
-			.subtitle{			
+		}			
+		.subtitle{			
 
     			font-family: 'Roboto Condensed', sans-serif;		
 				font-size: 15px;
 				color:black;
 				display: inline;
-			}	
+		}	
+		
 
-	.hex:hover{
-		cursor:pointer;
-	}
+		.hex:hover{
+			cursor:pointer;
+		}
 
-	.kpiText {
-		font-family: 'Roboto', sans-serif;
-		font-style:italic;
+		.kpiText {
+			font-family: 'Roboto', sans-serif;
+			font-style:italic;
+		
+		}
 	
-	}
-	
-	#targetLine{
+		#targetLine{
 
-		stroke:grey;
-		stroke-width:1
-	}
+			stroke:grey;
+			stroke-width:1
+		}
 	
 
-	.hextop {
-				width: 0;
-				border-bottom: 30px solid #FDEE00;
-				border-left: 72px solid transparent;
-				border-right: 72px solid transparent;
+		.hextop {
+					width: 0;
+					border-bottom: 30px solid #FDEE00;
+					border-left: 72px solid transparent;
+					border-right: 72px solid transparent;
 
-			}
+				}
 
-	.hexmiddle {					
-				width: 144px;
-				height: 90px;
-				background-color: #FDEE00;				
-				font-family: 'Roboto Condensed', sans-serif;
-				font-size:14px;
-			}
+		.hexmiddle {					
+					width: 144px;
+					height: 90px;
+					background-color: #FDEE00;				
+					font-family: 'Roboto Condensed', sans-serif;
+					font-size:14px;
+				}
 
-	.hexbottom {
-				width: 0;
-				border-top: 30px solid #FDEE00;
-				border-left: 72px solid transparent;
-				border-right: 72px solid transparent;
-			}
+		.hexbottom {
+					width: 0;
+					border-top: 30px solid #FDEE00;
+					border-left: 72px solid transparent;
+					border-right: 72px solid transparent;
+				}
 
-	.businessText{
-		font-family: 'Roboto Condensed', sans-serif;
+		.businessText{
+			font-family: 'Roboto Condensed', sans-serif;
 
-	}
+		}
 
-	.hidden{
-		transition:2s; 
-		color:white;
+		.hidden{
+			transition:2s; 
+			color:white;
 
-	}
+		}
 
-	.unhide {
-		transition:2s;
-		color:#CDCDCD;
-	}
+		.unhide {
+			transition:2s;
+			color:#CDCDCD;
+		}
 	</style>
 </head>
 <body>
 	<!--previous used #F2DF4A for bg-->
-	<div id='headerLogo' style='height:100px;background-color:#FDEE00;border:3px solid #F2DF4A;border-radius:5px;'>
-		<img src='dxclogo.png' style='display:inline;height:75%;width:70px;'>
-		<p class='appname' style='display:inline;position:relative;left:220px;'>INTEGRAL BUSINESS ANALYTICS</p>		
-		<p class='subtitle' style='border:1px solid red;display:inline;position:relative;left:-450px;top:10px;'>A next generation BI,Advanced Analytics Solution offering for Life, Group & General Insurance</p>
-
+	<div id='headerLogo' style='margin-right:40px;height:100px;background-color:#FDEE00;border-radius:5px;'>
+		<div style='display: inline;position:relative;top:15px;'>
+			<img src='dxclogo.png' style='padding:5px;height:60px;width:60px'>
+		</div>
+		<div style='display:inline;position:relative;left:150px;'>
+			<p class='appname' style='top:10px;'>INTEGRAL BUSINESS ANALYTICS</p>	
+			<p class='subtitle' style='display:block;position:absolute;left:50px;top:4px;'>A next generation BI,Advanced Analytics Solution offering for Life, Group & General Insurance</p>
+		</div>
+		<div style='display:inline;position:relative;top:15px;left:20px;float:right;'>
+			<img src='bi31.png' style='height:80%;'>
+		</div>
 	</div>
 
 	<div class='businessTextContainer'>	
@@ -98,7 +109,7 @@
 		</div>
 	</div>
 	
-	<div id='hexagonContainer' style='height:300px;top:60px;left:50px;position:fixed;'>	
+	<div id='hexagonContainer' style='height:300px;top:60px;left:10px;position:fixed;'>	
 		<div class='hex' style='width:104px;position:relative;left:400px;top:100px;'>
 			<div class='hextop'></div>
 			<div class='hexmiddle'>
